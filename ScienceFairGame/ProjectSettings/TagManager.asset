@@ -6,6 +6,18 @@ TagManager:
   tags:
   - Board
   - Tiles
+  - matrice
+  - exercise
+  - cards
+  - -2 Card
+  - -3 Card
+  - +2 Card
+  - +3 Card
+  - Special Tile
+  - SpecialTile
+  - Exercise
+  - Self
+  - Food
   layers:
   - Default
   - TransparentFX

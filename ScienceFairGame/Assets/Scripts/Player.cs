@@ -37,16 +37,23 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Board")
+        if(collision.gameObject.tag == "Board") 
         {
             canJump = true;
         }
-
+        if (collision.gameObject.tag == "Tiles")
+        {
+            canJump = true;
+        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Board")
+        {
+            canJump = false;
+        }
+        if (collision.gameObject.tag == "Tiles")
         {
             canJump = false;
         }
